@@ -1,0 +1,338 @@
+/* font-family: 'Metal Mania', cursive; */
+
+/* font-family: 'Tenali Ramakrishna', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  font-size: 34px;
+
+}
+
+body {
+  background-image: url(img/background1920.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 120vh;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  font-family: "Metal Mania", cursive;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+div.select {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 300px;
+  text-align: center;
+}
+
+div.col {
+  padding: 20px;
+  color: white;
+  border-radius: 5%;
+}
+
+div.col:hover {
+  color: darkgoldenrod;
+}
+
+button.start {
+  display: block;
+  background-color: #fff;
+  color: #111;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 80px;
+  height: 80px;
+  width: 180px;
+  margin: 60px auto 20px auto;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid#111;
+}
+
+button.start:hover {
+  background-color: #111;
+  color: darkgoldenrod;
+}
+
+.panel-left,
+.panel-right {
+  display: inline-block;
+  width: 48%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.panel-right p:last-child,
+.panel-right p:last-child span {
+  font-size: 40px;
+}
+
+nav p {
+  font-size: 26px;
+  color: white;
+}
+
+nav p span {
+  font-size: 26px;
+}
+
+.arrow {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  transition: 0.2s linear;
+  color: white;
+  transform: rotate(-90deg);
+}
+
+div i {
+  font-size: 50px;
+}
+
+nav {
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  right: -310px;
+  width: 300px;
+  height: 100%;
+  transition: 0.2s linear;
+  padding: 10px;
+}
+
+.arrow.on {
+  transform: rotate(90deg);
+  right: 350px;
+}
+
+nav.on {
+  right: 0px;
+}
+
+span.blue {
+  color: #64C7FF;
+}
+
+span.grey {
+  color: #999
+}
+
+span.orange {
+  color: orange
+}
+
+span.green {
+  color: #41B619;
+}
+
+span.violet {
+  color: #A771FE;
+}
+
+@media (max-width: 1600px) {
+  .wrapper {
+    height: 130vh;
+  }
+
+  * {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  button.start {
+
+    font-size: 38px;
+    line-height: 60px;
+    height: 60px;
+    width: 140px;
+    margin: 30px auto 10px auto;
+  }
+
+  .panel-right p:last-child,
+  .panel-right p:last-child span {
+    font-size: 32px;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+  body {
+    background-image: url(img/background640.jpg);
+    background-size: cover;
+  }
+
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+  }
+
+  * {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  button.start {
+    font-size: 50px;
+    line-height: 90px;
+    height: 90px;
+    width: 180px;
+    margin: 30px auto 10px auto;
+  }
+
+  .panel-right p:last-child,
+  .panel-right p:last-child span {
+    font-size: 32px;
+  }
+
+  div i {
+    font-size: 70px;
+  }
+
+  nav p,
+  span {
+    font-size: 30px;
+  }
+
+  img {
+    width: 100px;
+  }
+}
+
+
+
+@media (orientation: portrait) and (max-width: 420px) {
+  body {
+    width: 100vw;
+  }
+
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 150vh;
+    width: 100vw;
+  }
+
+  * {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  div.select {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  div.col {
+    padding: 10px;
+    color: white;
+    border-radius: 5%;
+  }
+
+
+  img {
+    width: 45px;
+  }
+
+  .arrow {
+    top: 80px;
+  }
+
+  div i {
+    font-size: 30px;
+  }
+
+  button.start {
+
+    font-size: 35px;
+    line-height: 60px;
+    height: 60px;
+    width: 120px;
+  }
+
+  .panel-left,
+  .panel-right {
+    font-size: 15px;
+    width: 48%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+
+  .panel-right p:last-child,
+  .panel-right p:last-child span {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  nav p,
+  nav p span {
+    font-size: 15px;
+  }
+
+  nav {
+
+    right: -210px;
+    width: 200px;
+    height: 100%;
+    transition: 0.2s linear;
+    padding: 10px;
+  }
+
+  .arrow.on {
+    transform: rotate(90deg);
+    right: 250px;
+  }
+
+}
