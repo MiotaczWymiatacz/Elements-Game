@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Tenali+Ramakrishna&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/766136fdde.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Defeat the elemental mage</h1>
+        <h2>Choose your element</h2>
+        <div class="select">
+            <div class="col">
+                <img data-option="water" src="img/woda.png" alt="">
+                <p>Water</p>
+            </div>
+            <div class="col">
+                <img data-option="wind" src="img/powietrze.png" alt="">
+                <p>Wind</p>
+            </div>
+            <div class="col">
+                <img data-option="fire" src="img/ogien.png" alt="">
+                <p>Fire</p>
+            </div>
+            <div class="col">
+                <img data-option="earth" src="img/ziemia.png" alt="">
+                <p>Earth</p>
+            </div>
+            <div class="col">
+                <img data-option="metal" src="img/metal.png" alt="">
+                <p>Metal</p>
+            </div>
+
+        </div>
+        <button class="start">Play</button>
+        <div class="panel-left">
+            <h3>Score</h3>
+            <p class="numbers">Games: <span>0</span></p>
+            <p class="wins">Won: <span>0</span></p>
+            <p class="losses">Lost: <span>0</span></p>
+            <p class="draws">Draws: <span>0</span></p>
+        </div>
+
+        <div class="panel-right">
+            <h3>Result</h3>
+            <p>Your choice: <span data-summary="your-choice"></span></p>
+            <p>Mage choice: <span data-summary="ai-choice"></span></p>
+            <p>Winner: <span data-summary="who-win"></span></p>
+        </div>
+        <div class="arrow">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+        <nav>
+            <p>
+                The mage is choosing beetwen elements with he same probability. To beat him you need to choose right
+                element.
+                &nbsp;<span class=blue>Water</span> beats <span class=grey>wind</span> and <span
+                    class="orange">fire</span> but is beaten by
+                <span class="green">earth</span> and
+                <span class="violet">metal</span>.
+                &nbsp;<span class=grey>Wind</span> beats <span class="orange">fire</span> and <span
+                    class="green">earth</span> but is
+                beaten by
+                <span class="violet">metal</span> and
+                <span class=blue>water</span>.
+                &nbsp;<span class="orange">Fire</span> beats <span class="green">earth</span> and <span
+                    class="violet">metal</span>
+                but is beaten by
+                <span class=blue>water</span> and
+                <span class=grey>wind</span>.
+                &nbsp;<span class="green">Earth</span> beats <span class="violet">metal</span> and <span
+                    class=blue>water</span> but
+                is beaten
+                by <span class=grey>wind</span> and
+                <span class="orange">fire</span>.
+                &nbsp;<span class="violet">Metal</span> beats <span class=blue>water</span> and <span
+                    class=grey>wind</span> but is
+                beaten by
+                <span class="orange">fire</span> and
+                <span class="green">earth</span>.
+            </p>
+        </nav>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
