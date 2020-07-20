@@ -51,7 +51,7 @@ function checkResult(playerChoice, aiChoice) {
         return "draw";
     }
 
-    const isPlayerWinning = winRules[playerChoice].includes(elem => elem === aiChoice);
+    const isPlayerWinning = winRules[playerChoice].includes(aiChoice);
 
     if (isPlayerWinning) {
         return "win";
